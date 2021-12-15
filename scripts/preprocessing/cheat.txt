@@ -1,0 +1,7 @@
+# demo
+python3 generate_tfrecord.py -x /home/lv-user187/Desktop/heads/workspace/training_demo/images/train/ -l /home/lv-user187/Desktop/heads/workspace/training_demo/annotations/label_map.pbtxt -o /home/lv-user187/Desktop/heads/workspace/training_demo/annotations/train.record
+
+python model_main_tf2.py --model_dir=models/my_efficientdet_d0_coco17_tpu-32 --pipeline_config_path=models/my_efficientdet_d0_coco17_tpu-32/pipeline.config
+
+tensorboard --logdir=models/my_efficientdet_d0
+tensorboard --logdir_spec d0_20:models/my_efficientdet_d0,d0_100:models/my_efficientdet_d0_100

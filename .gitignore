@@ -1,0 +1,14 @@
+.idea/
+venv/
+
+*.xml
+*.jpg
+*.jpeg
+
+*.onnx
+*.trt
+*.record
+*.index
+*.data-00000-of-00001
+*.pb
+
